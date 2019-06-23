@@ -18,7 +18,6 @@ function scrollSpy() {
   let currentOffsets = [...this.offsets, this.pageYOffset];
   let activeSection =
     currentOffsets.sort((a, b) => a - b).lastIndexOf(this.pageYOffset) - 1;
-  debugger;
   document.querySelector(".active").classList.remove("active");
   this.menuSections[activeSection].classList.add("active");
 }
